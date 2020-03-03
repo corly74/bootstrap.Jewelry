@@ -101,11 +101,7 @@
 
 
 
-document.querySelector('.list-group-category').addEventListener('click', function(e) {
-  if (e.target.nodeName == 'A') {
-   filterSelection("all")
-  }
- })
+
 
 //product.html js
 
