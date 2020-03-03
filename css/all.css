@@ -85,7 +85,7 @@ a.nav-link.disabled{color:#66a7ac!important;}
 
 .bg-ligter {
     background-color: rgba(64, 224, 208, .41);
-
+     margin-bottom: 50px;
 }
 
 @media (min-width: 576px) {
