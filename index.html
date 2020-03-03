@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
         integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/.css">
     <script src="https://kit.fontawesome.com/d038f356df.js"></script>
     
 </head>
@@ -19,34 +19,38 @@
 
     <!-- header navbar -->
 
-    <nav class="navbar navbar-light bg-dark d-flex justify-content-between ">
-        <div class=""> 
-        <i class="fas fa-gem  fa-2x mr-2 text-pink "></i>
+    <nav class="navbar navbar-light bg-dark d-flex justify-content-between">
+        <div>
+        <i class="fas fa-gem  fa-2x mr-2 text-pink"></i>
         <a class="navbar-brand text-pink" href="#">FoeverDiamond</a>
     </div>
-        <ul class="nav justify-content-center nav-tabs " id="nav-tab" role="tablist">
-            <li class="nav-item ">
-              <a class="nav-link activ"   id="#pane-1tab" data-toggle="tab" href="#pane-1" role="tab" aria-controls="#pane-1" aria-selected="true" >品牌珠寶</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link "  id="#pane-4tab" data-toggle="tab" href="#pane-4" role="tab" aria-controls="#pane-4" aria-selected="true" >流行飾品</a>
-            </li>
-            <li class="nav-item " id="nvaTab">
-              <a class="nav-link"  id="#pane-2tab" data-toggle="tab" href="#pane-2" role="tab" aria-controls="#pane-2" aria-selected="true" >彩色寶石</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  " href="#pane-3" id="#pane-3tab" data-toggle="tab" href="#pane-3" role="tab" aria-controls="#pane-3" aria-selected="true">訂婚/結婚戒指</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">訂製珠寶</a>
-            </li>
-          </ul>
 
+    <ul class="nav justify-content-center nav-tabs " id="nav-tab" role="tablist">
+        <li class="nav-item ">
+            <a class="nav-link activ" id="#pane-1tab" data-toggle="tab" href="#pane-1" role="tab"
+                aria-controls="#pane-1" aria-selected="true">品牌珠寶</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link " id="#pane-4tab" data-toggle="tab" href="#pane-4" role="tab" aria-controls="#pane-4"
+                aria-selected="true">流行飾品</a>
+        </li>
+        <li class="nav-item " id="nvaTab">
+            <a class="nav-link" id="#pane-2tab" data-toggle="tab" href="#pane-2" role="tab" aria-controls="#pane-2"
+                aria-selected="true">彩色寶石</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  " href="#pane-3" id="#pane-3tab" data-toggle="tab"  role="tab"
+                aria-controls="#pane-3" aria-selected="true">訂婚/結婚戒指</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">訂製珠寶</a>
+        </li>
+    </ul>
 
         <!-- header navbar 右上角購物車 含icon 數量badge-->
         <div class="dropdown ">
             <button type="button" class="btn btn-sm btn-cart " data-toggle="dropdown" data-flip="false">
-                <i class="fas fa-shopping-cart fa-2x" style="color: #7beadf;"></i> <!-- btn-cart另外下背景透明class,右上角購物車icon只占空間無底色 -->
+                <i class="fas fa-shopping-cart fa-2x"style="color: #7beadf;"></i> <!-- btn-cart另外下背景透明class,右上角購物車icon只占空間無底色 -->
                 <!-- 設計稿cart icon和badge是有一點重疊的,但是在html裡兩個都有佔空間無法重疊,需要用position絕對定位-->
                 <!-- 記得要去最上一層btn-cart裡面下relative-->
                 <span class="badge badge-pill badge-danger">12</span>
@@ -86,8 +90,8 @@
                     </table>
 
 
-                    <a href="bootstrap_shopping_cheakout.html"
-                        id="DownLoadAudio" target="_blank" style=" text-decoration:none;">
+                    <a href="file:///D:/bootstrap-project/bootstrap_shopping%20page/bootstrap_shopping_cheakout.html?"
+                        id="DownLoadAudio" target="_blank">
                         <button id="Submit6" class="btn btn-sm btn-primary-chart btn-block text-white" type="button"
                             onclick="openWin(@item.UserID,@item.AudioID)">
                             <i class="glyphicon glyphicon-download-alt"></i>結帳</button></a>
@@ -144,7 +148,7 @@
                         品牌珠寶
                     </a>
                     <a href="#pane-4" class="list-group-item list-group-item-action bg-tiffany" data-toggle="list"
-                        role="tab">流行飾品<span class="badge badge-pill badge-danger ml-1">新貨到</span></a>
+                        role="tab" id="myBtnContainer">流行飾品<span class="badge badge-pill badge-danger ml-1">新貨到</span></a>
                     <a href="#pane-2" class="list-group-item list-group-item-action bg-tiffany"
                         data-toggle="list">彩色寶石</a>
                     <a href="#pane-3" class="list-group-item list-group-item-action bg-tiffany" data-toggle="list"
@@ -162,7 +166,7 @@
 
 
                 <div class="tab-content">
-                    <div class="tab-pane active TabTag" id="pane-1" role="tabpanel" aria-labelledby="pane-1tab">
+                    <div class="tab-pane active" role="tabpanel" aria-labelledby="pane-1tab">
 
                         <div class="row">
                             <div class="col-md-4 mb-4 newproduct">
@@ -181,7 +185,7 @@
                                     <div class="card-footer border-top-0 bg-white">
                                         <!-- border-top-0把footer裡分隔線去除掉-->
                                         <a class="btn btn-primary-chart btn-block text-white btn-hover"
-                                            href="product.html"
+                                            href="https://corly74.github.io/bootstrap.shopping/product.html"
                                             role="button" target="_blank">購買去</a>
                                     </div>
                                 </div>
@@ -198,7 +202,7 @@
                                     </div>
                                     <div class="card-footer border-top-0 bg-white">
                                         <a class="btn btn-primary-chart btn-block text-white btn-hover"
-                                            href=roduct.html"
+                                            href="file:///D:/bootstrap-project/bootstrap_shopping%20page/bootstrap_shopping_product2.html"
                                             target="_blank" role="button">購買去</a>
                                     </div>
                                 </div>
@@ -220,10 +224,10 @@
                                             <a class="btn btn-primary-chart text-white disabled" href="#" role="button"
                                                 target="_blank"><small>玫瑰金</small></a>
                                             <a class="btn btn-primary-chart text-white btn-hover "
-                                                href="product.html"
+                                                href="file:///D:/bootstrap-project/bootstrap_shopping%20page/bootstrap_shopping_product2.html#"
                                                 role="button" target="_blank"><small>古銅金</small></a>
                                             <a class="btn btn-primary-chart text-white btn-hover "
-                                                href="product.html"
+                                                href="file:///D:/bootstrap-project/bootstrap_shopping%20page/bootstrap_shopping_product2.html#"
                                                 role="button" target="_blank"><small>24k金</small></a>
 
                                         </div>
@@ -237,7 +241,7 @@
                             <div class="col-md-4">
                                 <div class="card  h-100 box-shadow">
                                     <img src="img/Studio-Dog-Jewellery-m.jpg"
-                                        class="card-img-top card-pic  img-fluid" alt="...">
+                                        class="card-img-top card-pic" alt="...">
                                     <div class="card-body ">
                                         <h5 class="card-title">純銀天使</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a
@@ -263,7 +267,7 @@
                     </div>
 
 
-                    <div class="tab-pane TabTag" id="pane-2" role="tabpanel" aria-labelledby="pane-2tab">
+                    <div class="tab-pane" id="pane-2" role="tabpanel" aria-labelledby="pane-2tab">
                         <div class="row">
                             <div class="col-md-4 mb-4">
 
@@ -351,19 +355,12 @@
 
                         </div>
 
-
-
-
-
-
-
-
                     </div>
 
 
 
 
-                    <div class="tab-pane TabTag" id="pane-3" role="tabpanel" aria-labelledby="pane-3tab">
+                    <div class="tab-pane" id="pane-3" role="tabpanel" aria-labelledby="pane-3tab">
 
 
                         <div class="row">
@@ -462,9 +459,9 @@
 
 
                     </div>
-                    <div class="tab-pane TabTag" id="pane-4" role="tabpanel" aria-labelledby="pane-4tab">
+                    <div class="tab-pane" id="pane-4"role="tabpanel" aria-labelledby="pane-4tab">
                         <p class="h1 font-weight-bold">流行飾品</p>
-                        <div class="myBtn container row TabTag">
+                        <div class="myBtn container row">
                             <div class=""><button type="button" class="btn btn-dark btn-f mr-2 px-4 active show" onclick="filterSelection('all')">全部</button>
                             </div>
                             <div class=""><button type="button" class="btn btn-secondary btn-f mr-2 px-4" onclick="filterSelection('ring')">戒指</button>
@@ -652,28 +649,17 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-    <script src="js/new.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="js/all.js"></script>
 </body>
 
-
-
-</body>
 
 </html>
